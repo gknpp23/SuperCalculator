@@ -1,23 +1,19 @@
 @import url('./reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 :root {
     --color-icons: #9F292B;
-    --main-font-color: #dd353873;
-    --second-font-color: #ffd92c;
-    --color-sections: #fffb62;
-    --main-bg-color: #5017158a;
-
     --main-color: #870c0e88;
     --font-color: #eddfdf;
+    --second-font-color: #4b0000;
     --second-color: #a82a2a5e;
     --gradiente-color:#ef8c89;
-
 }
-
 
 body {
     background-image: url('../img//blurry-gradient-haikei.png');
     background-size: cover;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -36,6 +32,7 @@ main {
     box-shadow:10px 13px 50px -13px #000000bf
 
 }
+
 h1 {
     margin-bottom: 40px;
     text-align: center;
@@ -43,12 +40,12 @@ h1 {
     color:white;
     font-weight: 900;
 }
+
 section {
     padding: 2rem;
     color: #fff;
     background-color: var(--second-color);
 }
-
 
 .numbers form {
     display: flex;
@@ -56,24 +53,29 @@ section {
     gap: 45px;
 
 }
+
 label{
     margin-bottom: -20px;
 }
+
 input,button{
     padding: 10px;
     text-align: center;
     border-radius: 7px;
     border: none;
 }
+
 button {
     background-color: var(--color-icons);
     color: #fff;
     border: 1px solid var(--font-color);
 }
+
 input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
+
 .board {
     height: 80vh;
     display: grid;
@@ -85,11 +87,13 @@ input:focus {
     background-color: #eddfdf3d;
 
 }
+
 .result {
     text-align: center;
     color :#ffe5db;
 
 }
+
 .result h3{
     padding-bottom: 10px;
     border-bottom: 2px solid var(--gradiente-color);
@@ -97,10 +101,28 @@ input:focus {
     font-weight: 700;
     flex-wrap: wrap;
 }
+
 .number {
     margin-top: 15px;
-    color: #4b0000;
+    color: var(--second-font-color);
     font-weight: 500;
     
 }
 
+
+@media (max-width: 1000px){
+    main {
+        flex-direction: column;
+        height: 160vh; 
+        width: 80vw;
+       
+    }
+
+    .board {
+        height: 120vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7,120px);  
+        row-gap:2px; 
+    }
+}
