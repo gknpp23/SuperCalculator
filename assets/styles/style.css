@@ -110,20 +110,35 @@ input:focus {
 }
 
 
-@media (max-width: 1000px){
-
+@media(max-width:995px){
     main {
         flex-direction: column;
         height: 160vh; 
         width: 80vw;
        
     }
-
     .board {
-        height: 120vh;
+        height: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(7,70px);   
-        row-gap:3px; 
+        row-gap:10px; 
     }
 }
+@media(max-width:395px){
+    main {
+        height: 180vh;
+        width: 90vw;
+    }
+    .board {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7,65px);   
+        row-gap:15px; 
+    }
+}
+/* @media (max-width: 1000px){
+
+   
+    
+} */
