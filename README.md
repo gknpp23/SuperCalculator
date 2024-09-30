@@ -55,7 +55,7 @@ The **SuperCalculator ** project was a key component of the **XPe minicamp**, co
 
 Check out the **live demo** of the project here: [Supercalculator](https://super-calculator-js.netlify.app/)
 
-![Supercalculator Preview](https://github.com/user-attachments/assets/supercalculadora-preview.png)
+![Supercalculator Preview](https://github.com/gknpp23/SuperCalculator/blob/main/img/ScreenShot-calculator.png)
 
 ---
 
